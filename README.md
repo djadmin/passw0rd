@@ -1,6 +1,5 @@
-# passw0rd [![npm][npm-image]][npm-url] [![XO code style][xo-image]][xo-url]
+# passw0rd [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![XO code style][xo-image]][xo-url]
 
-[Build Status]: [![travis][travis-image]][travis-url]
 [travis-image]: https://img.shields.io/travis/djadmin/passw0rd/master.svg
 [travis-url]: https://travis-ci.org/djadmin/passw0rd
 [npm-image]: https://img.shields.io/npm/v/passw0rd.svg
@@ -17,7 +16,7 @@
 
 ## Installation
 
-```npm install --global passw0rd```
+```$ npm install --global passw0rd```
 
 ### Checking your password 🔍
 
