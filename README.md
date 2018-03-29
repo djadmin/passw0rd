@@ -23,13 +23,14 @@
 
 ```$ passw0rd```
 
+![CLI](./screenshot.png)
 ### How it works
 
 [Pwned Passwords](https://www.troyhunt.com/ive-just-launched-pwned-passwords-version-2/) has implemented a k-Anonymity model that allows a password to be searched for by partial hash. This allows the first 5 characters of a SHA-1 password hash (not case-sensitive) to be passed to the API.
 
 `GET https://api.pwnedpasswords.com/range/{first 5 hash chars}`
 
-Passw0rd Checker is using [Pwned Passwords API](https://haveibeenpwned.com/API/v2#PwnedPasswords) which searches through a database of more than 500 million passwords collected from various breaches.
+passw0rd is using [Pwned Passwords API](https://haveibeenpwned.com/API/v2#PwnedPasswords) which searches through a database of more than 500 million passwords collected from various breaches.
 
 ## Todo
 
