@@ -1,4 +1,12 @@
-# passw0rd [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
+# passw0rd [![npm][npm-image]][npm-url] [![XO code style][xo-image]][xo-url]
+
+[Build Status]: [![travis][travis-image]][travis-url]
+[travis-image]: https://img.shields.io/travis/djadmin/passw0rd/master.svg
+[travis-url]: https://travis-ci.org/djadmin/passw0rd
+[npm-image]: https://img.shields.io/npm/v/passw0rd.svg
+[npm-url]: https://npmjs.org/package/passw0rd
+[xo-image]: https://img.shields.io/badge/code_style-XO-5ed9c7.svg
+[xo-url]: https://github.com/xojs/xo
 
 🔑 securely checks a password to see if it has been previously exposed in a data breach
 
