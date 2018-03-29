@@ -1,6 +1,6 @@
 {
   "name": "passw0rd",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "checks your password against a list of compromised credentials",
   "main": "index.js",
   "scripts": {
