@@ -33,17 +33,13 @@ Passw0rd Checker is using [Pwned Passwords API](https://haveibeenpwned.com/API/v
 
 ## Todo
 
-* Add linter, build process and git hooks
 * Add CLI Help Menu
-* Add license
-* Add screenshot
-* Add icon
-* Add badges
-* Reduce bundle size using webpack / rollup
+* Add Icon / GIF
+* Reduce bundle size using webpack
 * Write unit test cases
 * Improve performance for browser api
 * Improve browser POC
-* Move cli to a different repo
+* Move cli/lib to a different repo
 * Add security checks
 
 ## FAQ - Why is it named passw0rd?
