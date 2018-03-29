@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>pwned-pass.js</title>
-	<script type="text/javascript" src="./dist/pwned.js"></script>
+	<title>passw0rd.js demo</title>
+	<script type="text/javascript" src="./dist/passw0rd.js"></script>
 </head>
 <body>
 	<div>
@@ -15,11 +15,11 @@
 	function search() {
 		document.getElementById('result').innerText = "";
 		var password = document.getElementById('pass').value;
-		pwned(password).then(function (res) {
-			document.getElementById('result').innerText = res.isPwned + ':' + res.count;
+		passw0rd.check(password).then(function (res) {
+			document.getElementById('result').innerText = JSON.stringify(res);
 		});
 	}
-	search();
 	document.getElementById('search').addEventListener('click', search);
+	search();
 </script>
 </html>
