@@ -14,7 +14,7 @@
 * Keeps your password hidden
 * Clears your clipboard automatically
 
-### Installation
+### Installation 🚀
 
 ```$ npm install --global passw0rd```
 
@@ -23,7 +23,6 @@
 ```$ passw0rd```
 
 ![CLI](./screenshot.png)
-
 
 ## API 📝
 
@@ -47,7 +46,7 @@ passw0rd.check('passw0rd').then(res => {
 ```
 You can find the library on `window.passw0rd`. A very simple POC is available at [browser.html](./browser.html)
 
-## How it works
+## How it works ⚙
 
 [Pwned Passwords](https://www.troyhunt.com/ive-just-launched-pwned-passwords-version-2/) has implemented a k-Anonymity model that allows a password to be searched for by partial hash. This allows the first 5 characters of a SHA-1 password hash (not case-sensitive) to be passed to the API.
 
@@ -67,7 +66,7 @@ You can find the library on `window.passw0rd`. A very simple POC is available at
 * Move cli/lib to a different repo
 * Add security checks
 
-## FAQ - Why is it named passw0rd?
+## FAQ - Why is it named passw0rd? 💫
 
 > `passw0rd` is one of the most commonly used passwords and has been found 200297 times in various data breaches!
 
