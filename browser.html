@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pwned-pass.js</title>
+	<script type="text/javascript" src="./dist/pwned.js"></script>
+</head>
+<body>
+	<div>
+		<input id="pass" type="text" value="passw0rd" />
+		<button id="search">Check Password</button>
+		<span id="result"></span>
+	</div>
+</body>
+<script type="text/javascript">
+	function search() {
+		document.getElementById('result').innerText = "";
+		var password = document.getElementById('pass').value;
+		pwned(password).then(function (res) {
+			document.getElementById('result').innerText = res.isPwned + ':' + res.count;
+		});
+	}
+	search();
+	document.getElementById('search').addEventListener('click', search);
+</script>
+</html>

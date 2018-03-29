@@ -1,0 +1,45 @@
+{
+  "name": "passw0rd",
+  "version": "1.0.0",
+  "description": "checks your password against a list of compromised credentials",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo",
+    "build": "webpack -p",
+    "watch": "webpack --watch",
+    "precommit": "npm test"
+  },
+  "keywords": [
+    "pwned",
+    "password",
+    "checker",
+    "hibp",
+    "breach",
+    "security"
+  ],
+  "author": {
+    "name": "Dheeraj Joshi",
+    "email": "dheerajjoshi1991@gmail.com",
+    "url": "https://djadmin.in"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10",
+    "xo": "^0.20.3"
+  },
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "clipboardy": "^1.2.3",
+    "cowsay": "^1.2.1",
+    "js-sha1": "^0.6.0",
+    "log-symbols": "^2.2.0",
+    "node-fetch": "^2.1.1",
+    "prompt-password": "^1.2.0"
+  },
+  "bin": {
+    "passw0rd": "cli.js"
+  }
+}
