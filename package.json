@@ -41,5 +41,6 @@
   },
   "bin": {
     "passw0rd": "cli.js"
-  }
+  },
+  "repository": "github:djadmin/passw0rd"
 }
