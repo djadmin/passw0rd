@@ -16,6 +16,8 @@
 
 ### Installation 🚀
 
+Ensure you have Node.js version 5 or higher installed. Then run the following:
+
 ```$ npm install --global passw0rd```
 
 ### Checking your password 🔍
@@ -65,6 +67,7 @@ You can find the library on `window.passw0rd`. A very simple POC is available at
 * Improve browser POC
 * Move cli/lib to a different repo
 * Add security checks
+* Add to node-awesomejs
 
 ## FAQ - Why is it named passw0rd? 💫
 
