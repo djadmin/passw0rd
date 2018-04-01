@@ -6,6 +6,7 @@ const clipboardy = require('clipboardy');
 const cowsay = require('cowsay');
 const chalk = require('chalk');
 const logSymbols = require('log-symbols');
+const boxen = require('boxen');
 const passw0rd = require('.');
 
 const prompt = new Prompt({
@@ -37,10 +38,22 @@ const clearClipboard = res => {
 	clipboardy.writeSync(res.pwned ? '' : '😇  Thanks for using a strong password');
 };
 
+const showWarning = () => {
+	const msg = `This password should ${chalk.red('never')} be used.`;
+	// Use a password manager to have strong, unique passwords for each app
+	const opt = {
+		padding: 1,
+		margin: 0,
+		align: 'center',
+		borderColor: 'yellow',
+		borderStyle: 'round'
+	};
+	console.log(boxen(msg, opt));
+};
+
 /**
  * Display information for the given password
- * @param {Object} res - The password to check
- * @param {Object} res - The password to check
+ * @param {Object} res - results obtained from passw0rd check
  */
 const showResult = res => {
 	const messages = {
@@ -50,13 +63,17 @@ const showResult = res => {
 	console.log();
 	if (res.pwned) {
 		console.log(cowsay.think({text: messages.pwned, e: 'oO'}));
-		// ShowWarning();
+		showWarning();
 	} else {
 		console.log(cowsay.say({text: messages.safe, f: 'tux'}));
 	}
 	return res;
 };
 
+/**
+ * Check given password
+ * @param {string} pass - user provided password
+ */
 const checkPass = pass => {
 	if (!pass) {
 		console.error(`${logSymbols.warning} Specify a password`);
