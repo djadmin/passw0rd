@@ -43,6 +43,11 @@ passw0rd.check('passw0rd').then(res => {
 ```
 
 **Browser**
+
+Run the following command to get [UMD](https://github.com/umdjs/umd) version of the library under the `dist` folder
+
+`$ npm run build`
+
 ```html
 <script src="https://cdn-path/dist/passw0rd.js"></script>
 ```
